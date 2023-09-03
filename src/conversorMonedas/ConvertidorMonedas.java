@@ -3,8 +3,8 @@ package conversorMonedas;
 public class ConvertidorMonedas {
 
 	private double peso = 1;
-	private double dollar = 1/548.0;
-	private double euro = 1/599.0;
+	private double dollar = 1/750.0;
+	private double euro = 1/800.0;
 	
 
 	public double getPeso() {
