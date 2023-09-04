@@ -7,16 +7,13 @@ import principal.Principal;
 
 public class PrincipalTemperaturas {
 	
-	double myInput;
-	double myOuput;
+	Double myInput;
+	Double myOuput;
 	String unidadInput;
     String unidadOuput;
 
 	public void realizarConversor() {
 		ConvertidorTemperaturas input = new ConvertidorTemperaturas();
-
-		// Seleción moneda inicial
-		while (true) {
 			Object[] conversores = {"Kelvin -> Celcius", "Kelvin -> Fahrenheit",
 					"Celcius -> Kelvin", "Celcius -> Fahrenheit",
 					"Fahrenheit -> Celcius", "Fahrenheit -> Kelvin"};
@@ -24,7 +21,7 @@ public class PrincipalTemperaturas {
 			
 			if (seleccion == null) {
                 JOptionPane.showMessageDialog(null, "Hasta luego");
-                break;
+                System.exit(0);
             }
 			
 			switch (seleccion) {
@@ -34,21 +31,48 @@ public class PrincipalTemperaturas {
 				myOuput = input.kelviaACelcius(myInput);
 				break;
 			
-			case "monedas":
+			case "Kelvin -> Fahrenheit":
+				obtenerUnidades(seleccion);
+				myInput = Principal.obtenerInput();
+				myOuput = input.kelviaAFahreheit(myInput);
+				break;
+			
+			case "Celcius -> Kelvin":
+				obtenerUnidades(seleccion);
+				myInput = Principal.obtenerInput();
+				myOuput = input.celciusAKelvin(myInput);
+				break;
+				
+			case "Celcius -> Fahrenheit":
+				obtenerUnidades(seleccion);
+				myInput = Principal.obtenerInput();
+				myOuput = input.celciusAFahrenheit(myInput);
+				break;
+				
+			case "Fahrenheit -> Kelvin":
+				obtenerUnidades(seleccion);
+				myInput = Principal.obtenerInput();
+				myOuput = input.fahrenheitAkelvin(myInput);
+				break;
+				
+			case "Fahrenheit -> Celcius":
+				obtenerUnidades(seleccion);
+				myInput = Principal.obtenerInput();
+				myOuput = input.fahrenheitACelcius(myInput);
 				break;
 			}
 			
-			int deseaSalir = JOptionPane.showOptionDialog ( null, "desea salir del conversor", "MENU CONVERSOR", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, new Object [ ] { "SI", "NO" }, null );
-			if (deseaSalir == 0) {
-				JOptionPane.showMessageDialog(null, "Hasta pronto!");
-				break;
+			if (myInput!= null) {
+				JOptionPane.showMessageDialog(null,
+						myInput + "º " + unidadInput + " equivalen a: " + myOuput + "º " + unidadOuput);
 			}
-		}
-	
-			
+			System.out.println(myInput);
+				
 		// Resultado
-			JOptionPane.showMessageDialog(null,
-					myInput + "º " + unidadInput + " equivalen a: " + myOuput + "º " + unidadOuput);
+			
+			
+
+			
 		}
 	
 	 public void obtenerUnidades(String cadena) {

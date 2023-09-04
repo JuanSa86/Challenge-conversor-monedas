@@ -43,7 +43,8 @@ public class Principal {
             try {
                 String input = JOptionPane.showInputDialog(null, "Ingrese la cantidad que desea convertir");
                 if (input == null) {
-                	return 0;
+                	JOptionPane.showMessageDialog(null, "Hasta luego");
+                	System.exit(0);
                 }
 
                 if (input.matches("-?\\d+(\\.\\d+)?")) {
@@ -52,7 +53,7 @@ public class Principal {
                     JOptionPane.showMessageDialog(null, "Entrada inválida. Por favor, ingrese un número válido.");
                 }
                 
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException e){
                 JOptionPane.showMessageDialog(null, "Entrada inválida. Por favor, ingrese un número válido.");
             }
         }

@@ -6,9 +6,9 @@ import principal.Principal;
 public class PrincipalMonedas {
 
 	public void realizarConversor() {
-		double myInput = 0;
-		double cotizacion = 0;
-		double tipoMoneda = 0;
+		Double myInput = null;
+		Double cotizacion = 0.0;
+		Double tipoMoneda = 0.0;
 		String nombreMonedaInicial = "";
 		String nombreMonedaFinal = "";
 		ConvertidorMonedas input = new ConvertidorMonedas();
@@ -45,7 +45,7 @@ public class PrincipalMonedas {
 		String mensajeOuput = mensajeInput + "\nCantidad ingresada" + myInput;
 		Object[] options2 = { "Pesos Argentinos", "Dollars", "Euros" };
 		int monedaFinal = 0;
-		if (myInput != 0) {
+		if (myInput != null) {
 			monedaFinal = JOptionPane.showOptionDialog(null, (mensajeOuput + "\n¿A qué moneda te gustaria convertir?"),
 					"SELECCIONA LA MONEDA", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options2,
 					options2[1]);
@@ -67,7 +67,7 @@ public class PrincipalMonedas {
 		default:
 			break;
 		}
-		
+
 		if (myInput == 0 || nombreMonedaFinal == "") {
 			System.out.println("hasta pronto");
 		} else {
@@ -75,8 +75,7 @@ public class PrincipalMonedas {
 			JOptionPane.showMessageDialog(null,
 					myInput + " " + nombreMonedaInicial + " equivalen a: " + result + " " + nombreMonedaFinal);
 		}
-		
+
 	}
-	
-	
+
 }
