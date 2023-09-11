@@ -1,4 +1,8 @@
-<h1 align="center"> Conversor Challenge Alura </h1>
+<h1 align="center">
+  <p align="center">Conversor Challenge Alura</p>
+  <a href="#"><img src="https://github.com/JuanSa86/Challenge-conversor-monedas/assets/90635353/85159f77-dd32-477c-8842-b00aed652c90></a>
+</h1>
+
 
 Este proyecto es un programa simple desarrollado en Java que permite a los usuarios convertir entre diferentes monedas y realizar conversiones de temperaturas de manera fácil y rápida.
 
