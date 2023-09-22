@@ -1,18 +1,21 @@
-<h1 align="center"> Conversor Challenge Alura </h1>
+#<p align="center">Conversor Challenge Alura</p>
+<h1 align="center">
+  <a href="#"><img src="./img/5348UCM.png"></a>
+</h1>
 
-Este proyecto es un programa simple desarrollado en Java que permite a los usuarios convertir entre diferentes monedas y realizar conversiones de temperaturas de manera f谩cil y r谩pida.
+Este proyecto es un programa simple desarrollado en Java que permite a los usuarios convertir entre diferentes monedas y realizar conversiones de temperaturas de manera f醕il y r谩pida.
 
 ## Funcionalidades
 
-- **Conversi贸n de Monedas:** Este programa admite la conversi贸n entre m煤ltiples monedas, lo que facilita la conversi贸n de divisas en tiempo real. Los usuarios pueden ingresar la cantidad y seleccionar las monedas de origen y destino para obtener el valor convertido.
+- **Conversi髇 de Monedas:** Este programa admite la conversi髇 entre m煤ltiples monedas, lo que facilita la conversi髇 de divisas en tiempo real. Los usuarios pueden ingresar la cantidad y seleccionar las monedas de origen y destino para obtener el valor convertido.
 
-- **Conversi贸n de Temperaturas:** Adem谩s de las conversiones de monedas, el programa tambi茅n permite convertir temperaturas entre diferentes unidades, como Celsius, Fahrenheit y Kelvin. Los usuarios pueden ingresar un valor de temperatura y seleccionar la unidad de origen y destino.
+- **Conversi髇 de Temperaturas:** Adem醩 de las conversiones de monedas, el programa tambi閚 permite convertir temperaturas entre diferentes unidades, como Celsius, Fahrenheit y Kelvin. Los usuarios pueden ingresar un valor de temperatura y seleccionar la unidad de origen y destino.
 
 ## Uso
 
 Para utilizar el programa:
 
-1. Inicie la aplicaci贸n Java.
-2. Seleccione la opci贸n de conversi贸n deseada (moneda o temperatura).
+1. Inicie la aplicaci髇 Java.
+2. Seleccione la opci髇 de conversi髇 deseada (moneda o temperatura).
 3. Siga las instrucciones en pantalla para ingresar los valores y unidades de origen y destino.
-4. Obtenga el resultado de la conversi贸n de manera instant谩nea.
+4. Obtenga el resultado de la conversi髇 de manera instant醤ea.
